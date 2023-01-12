@@ -269,11 +269,9 @@ body {
   max-width: 1366px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
-  /* height: 32.57vw; */
 }
 .shop .gallery__item img {
   max-width: 100%;
-  /* object-fit:cover; */
 }
 .shop .gallery__item--1 {
   grid-column: 1/2;
@@ -329,13 +327,13 @@ body {
   font-family: "Lato", sans-serif;
   color: rgb(132, 135, 137);
   text-transform: uppercase;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-weight: 700;
-  font-size: 12px;
-  margin: 3vw;
+  font-size: 16px;
+  margin: 5vw;
 }
 
 .mailing {

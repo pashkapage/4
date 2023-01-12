@@ -317,14 +317,9 @@ body {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
 
-        /* height: 32.57vw; */
         &__item {
             img {
                 max-width: 100%;
-
-
-
-                /* object-fit:cover; */
             }
 
             &--1 {
@@ -392,13 +387,13 @@ body {
             font-family: $font;
             color: $color;
             text-transform: uppercase;
-            padding-left: 25px;
-            padding-right: 25px;
+            padding-left: 40px;
+            padding-right: 40px;
             padding-top: 10px;
             padding-bottom: 10px;
             font-weight: 700;
-            font-size: 12px;
-            margin: 3vw;
+            font-size: 16px;
+            margin: 5vw;
         }
 
     }
