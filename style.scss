@@ -138,7 +138,18 @@ body {
 
     &__elem {
         position: relative;
-
+        .in-img{
+            position: relative;
+            max-width: 100%;
+        }
+        .on-img{
+            position: absolute;
+            z-index: 3;
+            transform: translate(-50%, -50%) scale(100%);
+            top:50%;
+            left: 50%;
+            
+        }
         &--1 {
             grid-column: 1/3;
             grid-row: 1/2;
@@ -553,6 +564,9 @@ body {
     .header__menu{
         top: 15px;
     }
+    .work__elem .on-img{
+        transform: translate(-50%,-50%) scale(0.75);
+    }
 }
 @media(max-width:550px){
     .header__menu .list{
@@ -562,5 +576,8 @@ body {
     .list .logo{
         width: 50%;
         padding-left: 25px;
+    }
+    .work__elem .on-img{
+        transform: translate(-50%,-50%) scale(0.45);
     }
 }
