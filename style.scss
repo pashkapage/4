@@ -20,12 +20,13 @@ $maxWidth: 1366;
 
 html {
     max-width: 1348px;
+    box-sizing: border-box;
 }
 
 body {
     margin: 0 auto;
     font-family: $font;
-    box-sizing: border-box;
+    
 
 }
 
@@ -406,26 +407,28 @@ body {
 
     &__elem {
         &--img {
-            margin-top: 4vw;
+            margin-top: 6vw;
         }
 
         &--h2 {
             font-size: 18px;
             font-style: italic;
             color: $color;
+            margin-top:1.5vw;
         }
 
         &--form {
             margin-bottom: 5vw;
         }
 
-        & .forma {
+         .forma {
             &__input {
                 border: 1px solid $color;
                 width: 300px;
-                height: 38px;
+                height: 55px;
                 padding: 0;
-                margin-right: 5px;
+                margin-right: 10px;
+                margin-top: 1vw;
                 outline: none;
                 font-family: $font;
                 color: $color;
@@ -442,8 +445,8 @@ body {
             }
 
             &__btn {
-                height: 40px;
-                width: 80px;
+                height: 58px;
+                width:105px;
                 padding: 0;
                 border: 0;
                 background-color: #64c29e;

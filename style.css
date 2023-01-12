@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 html {
   max-width: 1348px;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0 auto;
   font-family: "Lato", sans-serif;
-  box-sizing: border-box;
 }
 
 .wrapper {
@@ -342,12 +342,13 @@ body {
   align-items: center;
 }
 .mailing__elem--img {
-  margin-top: 4vw;
+  margin-top: 6vw;
 }
 .mailing__elem--h2 {
   font-size: 18px;
   font-style: italic;
   color: rgb(132, 135, 137);
+  margin-top: 1.5vw;
 }
 .mailing__elem--form {
   margin-bottom: 5vw;
@@ -355,9 +356,10 @@ body {
 .mailing__elem .forma__input {
   border: 1px solid rgb(132, 135, 137);
   width: 300px;
-  height: 38px;
+  height: 55px;
   padding: 0;
-  margin-right: 5px;
+  margin-right: 10px;
+  margin-top: 1vw;
   outline: none;
   font-family: "Lato", sans-serif;
   color: rgb(132, 135, 137);
@@ -379,8 +381,8 @@ body {
   font-style: inherit;
 }
 .mailing__elem .forma__btn {
-  height: 40px;
-  width: 80px;
+  height: 58px;
+  width: 105px;
   padding: 0;
   border: 0;
   background-color: #64c29e;
