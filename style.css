@@ -219,25 +219,29 @@ body {
   background-color: #f7f7f7;
 }
 .twitter__elem--img {
-  margin-top: 6vw;
+  margin-top: 7.5vw;
 }
 .twitter__elem--h2 {
   font-size: 15px;
   letter-spacing: 1.5px;
   color: black;
+  margin-top: 1.7vw;
 }
 .twitter__elem--h2 span {
   color: rgb(132, 135, 137);
 }
 .twitter__elem--p {
   color: rgb(132, 135, 137);
-  font-style: italic;
-  max-width: 800px;
+  letter-spacing: 1px;
+  max-width: 900px;
   text-align: center;
-  line-height: 1.889;
+  line-height: 1.7;
+  font-size: 18px;
+  margin-top: 6px;
+  margin-bottom: 5.4vw;
 }
 .twitter .btn {
-  margin-bottom: 7vw;
+  margin-bottom: 5vw;
   display: flex;
   gap: 8px;
 }

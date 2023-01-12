@@ -259,14 +259,14 @@ body {
 
     &__elem {
         &--img {
-            margin-top: 6vw;
+            margin-top: 7.5vw;
         }
 
         &--h2 {
             font-size: 15px;
             letter-spacing: 1.5px;
             color: black;
-
+            margin-top: 1.7vw;
             span {
                 color: $color;
             }
@@ -274,15 +274,18 @@ body {
 
         &--p {
             color: $color;
-            font-style: italic;
-            max-width: 800px;
+            letter-spacing: 1px;
+            max-width: 900px;
             text-align: center;
-            line-height: 1.889;
+            line-height: 1.7;
+            font-size: 18px;
+            margin-top: 6px;
+            margin-bottom: 5.4vw;
         }
     }
 
     & .btn {
-        margin-bottom: 7vw;
+        margin-bottom: 5vw;
         display: flex;
         gap: 8px;
 
