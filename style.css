@@ -99,12 +99,6 @@ body {
 }
 .work img:not(img[class]) {
   max-width: 100%;
-  /* position: absolute; */
-  /* height: 512px; */
-  /* left: 50%;
-  top:50%;
-  transform: translate(-50%, -50%);
-  object-fit: cover; */
 }
 .work__elem {
   position: relative;

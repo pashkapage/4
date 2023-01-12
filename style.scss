@@ -26,8 +26,6 @@ html {
 body {
     margin: 0 auto;
     font-family: $font;
-    
-
 }
 
 .wrapper {
@@ -130,16 +128,8 @@ body {
     align-items: end;
     row-gap: 0;
 
-    & img:not(img[class]) {
+     img:not(img[class]) {
         max-width: 100%;
-        /* position: absolute; */
-        /* height: 512px; */
-
-        /* left: 50%;
-        top:50%;
-        transform: translate(-50%, -50%);
-        object-fit: cover; */
-
     }
 
     &__elem {
@@ -211,14 +201,11 @@ body {
 
         &--h2 {
             @include adaptiv-font(17, 10);
-            //font-size: 17px;
             letter-spacing: 2px;
-
         }
 
         &--p {
             @include adaptiv-font(13,8 );
-            //font-size: 13px;
             max-width: 335px;
             line-height: 1.789;
             text-align: justify;
@@ -245,7 +232,7 @@ body {
         width: 0;
         position: absolute;
         pointer-events: none;
-        border-color: transparent; //rgba(255, 255, 255, 0);
+        border-color: transparent; 
         border-top-color: #ffffff;
         border-width: 10px;
         margin-left: -10px;
@@ -440,7 +427,6 @@ body {
                 &::placeholder {
                     font-size: inherit;
                     font-style:inherit;
-                    
                 }
             }
 
@@ -498,7 +484,6 @@ body {
 
 @media(max-width:1150px) {
     .discription__item--p {
-        //font-size: 13px;
         max-width: 250px;
         line-height: 1.5;
         margin-top: 2px;
