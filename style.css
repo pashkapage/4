@@ -18,8 +18,11 @@ body {
   display: block;
   position: absolute;
   height: 0;
+  z-index: 2;
+  top: 30px;
 }
 .header__menu .list {
+  width: 100vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -27,10 +30,6 @@ body {
   gap: 26px;
   margin: 0;
   padding: 0;
-  position: fixed;
-  top: 30px;
-  left: 406px;
-  z-index: 2;
 }
 .header__menu .list .list__item {
   flex-shrink: 0;
@@ -49,6 +48,9 @@ body {
 .header__menu .list .list__item a {
   list-style-type: none;
   margin-bottom: 10px;
+}
+.header__menu .list .list__item--img {
+  list-style-type: none;
 }
 .header__menu .list .list__item .logo {
   width: 82px;
