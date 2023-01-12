@@ -624,5 +624,21 @@ body {
     .work__elem .on-img{
         transform: translate(-50%,-50%) scale(0.45);
     }
-    
+    .contact{
+        grid-template-columns:50px 1fr 1fr 1fr 1fr 50px;
+    }
+}
+
+@media(max-width: 475px){
+    .mailing__elem .forma__input{
+        width: 200px;
+        height: 40px;
+    }
+    .mailing__elem .forma__btn{
+        width: 50px;
+        height: 43px;
+    }
+    .contact{
+        grid-template-columns:25px 1fr 1fr 25px;
+    }
 }
