@@ -39,6 +39,7 @@ body {
     height: 0;
     z-index: 2;
     top: 30px;
+
     .list {
         width: 98vw;
         display: flex;
@@ -48,6 +49,7 @@ body {
         gap: 26px;
         margin: 0;
         padding: 0;
+
         .list__item {
             flex-shrink: 0;
             list-style-type: none;
@@ -68,9 +70,11 @@ body {
                 list-style-type: none;
                 margin-bottom: 10px;
             }
-            &--img{
+
+            &--img {
                 list-style-type: none;
             }
+
             .logo {
                 width: 82px;
                 height: 70px;
@@ -109,12 +113,13 @@ body {
         }
 
         &--p {
-            margin-left: 25px;
             font-size: 15px;
             max-width: 900px;
             line-height: 1.889;
             text-align: center;
             color: $color;
+            margin-left: 25px;
+            margin-right: 25px;
             margin-bottom: 8.2vw;
         }
     }
@@ -127,7 +132,7 @@ body {
     align-items: end;
     row-gap: 0;
 
-     img:not(img[class]) {
+    img:not(img[class]) {
         max-width: 100%;
     }
 
@@ -204,7 +209,7 @@ body {
         }
 
         &--p {
-            @include adaptiv-font(13,8 );
+            @include adaptiv-font(13, 8);
             max-width: 335px;
             line-height: 1.789;
             text-align: justify;
@@ -231,7 +236,7 @@ body {
         width: 0;
         position: absolute;
         pointer-events: none;
-        border-color: transparent; 
+        border-color: transparent;
         border-top-color: #ffffff;
         border-width: 10px;
         margin-left: -10px;
@@ -254,18 +259,20 @@ body {
             letter-spacing: 1.5px;
             color: black;
             margin-top: 1.7vw;
+
             span {
                 color: $color;
             }
         }
 
         &--p {
-            color: $color;
-            letter-spacing: 1px;
-            max-width: 900px;
-            text-align: center;
-            line-height: 1.7;
             font-size: 18px;
+            max-width: 900px;
+            line-height: 1.7;
+            color: $color;
+            text-align: center;
+            margin-left: 25px;
+            margin-right: 25px;
             margin-top: 6px;
             margin-bottom: 5.4vw;
         }
@@ -303,8 +310,14 @@ body {
         max-width: 1366px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
-
+        $heighImg: 16.2vw; 
         &__item {
+            &:hover {
+                transition: 0.5s;
+                transform: scale(1.2);
+                box-shadow: 0 5px 5px 0px black;
+            }
+
             img {
                 max-width: 100%;
             }
@@ -312,56 +325,56 @@ body {
             &--1 {
                 grid-column: 1/2;
                 grid-row: 1/2;
-                height: 16.2vw;
+                height: $heighImg;
                 overflow: hidden;
             }
 
             &--2 {
                 grid-column: 2/3;
                 grid-row: 1/2;
-                height: 16.2vw;
+                height: $heighImg;
                 overflow: hidden;
             }
 
             &--3 {
                 grid-column: 3/4;
                 grid-row: 1/3;
-                height: 32.4vw;
+                height: $heighImg * 2;
                 overflow: hidden;
             }
 
             &--4 {
                 grid-column: 4/5;
                 grid-row: 1/3;
-                height: 32.4vw;
+                height: $heighImg * 2;
                 overflow: hidden;
             }
 
             &--5 {
                 grid-column: 5/7;
                 grid-row: 1/2;
-                height: 16.2vw;
+                height: $heighImg;
                 overflow: hidden;
             }
 
             &--6 {
                 grid-column: 1/3;
                 grid-row: 2/3;
-                height: 16.2vw;
+                height: $heighImg;
                 overflow: hidden;
             }
 
             &--7 {
                 grid-column: 5/6;
                 grid-row: 2/3;
-                height: 16.2vw;
+                height: $heighImg;
                 overflow: hidden;
             }
 
             &--8 {
                 grid-column: 6/7;
                 grid-row: 2/3;
-                height: 16.2vw;
+                height: $heighImg;
                 overflow: hidden;
             }
         }
@@ -400,14 +413,14 @@ body {
             font-size: 18px;
             font-style: italic;
             color: $color;
-            margin-top:1.5vw;
+            margin-top: 1.5vw;
         }
 
         &--form {
             margin-bottom: 5vw;
         }
 
-         .forma {
+        .forma {
             &__input {
                 border: 1px solid $color;
                 width: 300px;
@@ -425,13 +438,13 @@ body {
 
                 &::placeholder {
                     font-size: inherit;
-                    font-style:inherit;
+                    font-style: inherit;
                 }
             }
 
             &__btn {
                 height: 58px;
-                width:105px;
+                width: 105px;
                 padding: 0;
                 border: 0;
                 background-color: #64c29e;
@@ -487,9 +500,44 @@ body {
         line-height: 1.5;
         margin-top: 2px;
         margin-bottom: 0;
-      }
-      .discription__item--h2{
+    }
+
+    .discription__item--h2 {
         margin-top: 5px;
         margin-bottom: 5px;
-      }
+    }
+}
+
+@media (max-width: 900px) {
+    .about-us__item--p {
+        text-align: justify;
+    }
+
+    .shop .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+        $heighImg: 29.3vw;
+        &__item{
+            height: $heighImg;
+            &--3, &--4{
+                height: $heighImg * 2;
+            }
+        }
+    }
+
+    .shop .gallery__item--4 {
+        grid-column: 1/2;
+        grid-row: 3/5;
+    }
+    .shop .gallery__item--5 {
+        grid-column: 2/4;
+        grid-row: 3/4;
+    }
+    .shop .gallery__item--7 {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    .shop .gallery__item--8 {
+        grid-column: 3/4;
+        grid-row: 4/5;
+    }
 }
