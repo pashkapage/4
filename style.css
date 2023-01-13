@@ -458,9 +458,9 @@ body {
   .about-us__item--p {
     text-align: justify;
   }
-  .discription {
-    box-shadow: 0 0 5px 0 black;
-  }
+  /* .discription {
+      box-shadow: 0 0 5px 0 black;
+  } */
   .discription__item--p {
     font-size: 15px;
     max-width: none;
