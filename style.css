@@ -488,7 +488,10 @@ body {
   .work__elem {
     height: auto;
   }
-  .work .work__elem--1, .work .work__elem--4, .work .work__elem--5, .work .work__elem--7 {
+  .work .work__elem--1,
+.work .work__elem--4,
+.work .work__elem--5,
+.work .work__elem--7 {
     display: none;
   }
   .shop .gallery {
