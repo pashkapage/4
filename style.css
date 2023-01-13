@@ -439,13 +439,16 @@ body {
 @media (max-width: 1150px) {
   .discription__item--p {
     max-width: 250px;
-    /* line-height: 1.5; */
     margin-top: 2px;
     margin-bottom: 0;
   }
   .discription__item--h2 {
     margin-top: 5px;
     margin-bottom: 5px;
+  }
+  .discription__item--line {
+    margin-top: 1vw;
+    margin-bottom: 2vw;
   }
 }
 @media (max-width: 900px) {
