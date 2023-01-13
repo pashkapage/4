@@ -464,6 +464,10 @@ body {
   .discription__item--img {
     margin-top: 25px;
   }
+  .discription__item--line {
+    margin-top: 1.464vw;
+    margin-bottom: 3.29vw;
+  }
   .work {
     grid-template-columns: 1fr 1fr;
   }
