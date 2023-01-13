@@ -117,6 +117,9 @@ body {
   top: 50%;
   left: 50%;
 }
+.work__elem .img {
+  max-width: 100%;
+}
 .work__elem--1 {
   grid-column: 1/3;
   grid-row: 1/2;
@@ -455,6 +458,9 @@ body {
   .about-us__item--p {
     text-align: justify;
   }
+  .discription {
+    box-shadow: 0 0 5px 0 black;
+  }
   .discription__item--p {
     font-size: 15px;
     max-width: none;
@@ -469,38 +475,21 @@ body {
     margin-bottom: 3.29vw;
   }
   .work {
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* .work__elem--2,.work__elem--3,.work__elem--6 {
+        .img {
+            display: none;
+        }
+    } */
   }
   .work__elem {
     height: auto;
   }
-  .work .work__elem--1 {
-    grid-column: 1/3;
-    grid-row: unset;
-  }
-  .work .work__elem--2 {
-    grid-column: 1/3;
-    grid-row: 1/2;
-  }
-  .work .work__elem--3 {
-    grid-column: 1/3;
-    grid-row: unset;
-  }
-  .work .work__elem--4 {
-    grid-column: 1/3;
-    grid-row: unset;
-  }
-  .work .work__elem--5 {
-    grid-column: unset;
-    grid-row: 6/7;
-  }
-  .work .work__elem--6 {
-    grid-column: 1/3;
-    grid-row: 5/6;
-  }
-  .work .work__elem--7 {
-    grid-column: unset;
-    grid-row: 6/7;
+  .work .work__elem--1, .work .work__elem--4, .work .work__elem--5, .work .work__elem--7 {
+    display: none;
   }
   .shop .gallery {
     grid-template-columns: 1fr 1fr 1fr;
